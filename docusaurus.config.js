@@ -24,7 +24,7 @@ module.exports = {
           // Please change this to your repo.
           editUrl: "https://github.com/facebook/docusaurus/edit/main/website/",
         },
-        blog: {
+        news: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
@@ -53,7 +53,7 @@ module.exports = {
             position: "left",
             label: "Wiki",
           },
-          { to: "/blog", label: "News", position: "left" },
+          { to: "/news", label: "News", position: "left" },
           {
             href: "https://github.com/facebook/docusaurus",
             label: "GitHub",
@@ -94,8 +94,8 @@ module.exports = {
             title: "More",
             items: [
               {
-                label: "Blog",
-                to: "/blog",
+                label: "News",
+                to: "/news",
               },
               {
                 label: "GitHub",
