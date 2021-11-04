@@ -5,7 +5,8 @@ import styles from "./HomepageFeatures.module.css";
 const FeatureList = [
   {
     title: "Feature mai viste!",
-    Svg: require("../../static/img/undraw_docusaurus_mountain.svg").default,
+    Svg: require("../../static/img/streamline-icon-blockchain@200x200.svg")
+      .default,
     description: (
       <>
         Il nostro server offre un gameplay diverso dagli altri, con modelli 3D
@@ -15,7 +16,7 @@ const FeatureList = [
   },
   {
     title: "Novità",
-    Svg: require("../../static/img/undraw_docusaurus_tree.svg").default,
+    Svg: require("../../static/img/streamline-icon-image@200x200.svg").default,
     description: (
       <>
         Lavoriamo per voi, per portare sempre costantemente nuovi aggiornamenti!
@@ -25,11 +26,44 @@ const FeatureList = [
   },
   {
     title: "Texture Pack",
-    Svg: require("../../static/img/undraw_docusaurus_react.svg").default,
+    Svg: require("../../static/img/streamline-icon-marketing-2@200x200.svg")
+      .default,
     description: (
       <>
         Abbiamo inserito una texture pack all'interno del Server, per migliorare
         e personalizzare l'esperienza di gioco
+      </>
+    ),
+  },
+  {
+    title: "Premium Access",
+    Svg: require("../../static/img/streamline-icon-shield-4@200x200.svg")
+      .default,
+    description: (
+      <>
+        Se hai comprato Minecraft, non avrai bisogno di inserire una password
+        proteggiamo con maggiore sicurezza i vostri account ufficiali!
+      </>
+    ),
+  },
+  {
+    title: "Community",
+    Svg: require("../../static/img/streamline-icon-home-5@200x200.svg").default,
+    description: (
+      <>
+        Lavoriamo per voi, per portare sempre costantemente nuovi aggiornamenti!
+        Ascoltiamo le vostre richieste!
+      </>
+    ),
+  },
+  {
+    title: "Supporto",
+    Svg: require("../../static/img/streamline-icon-customer-care@200x200.svg")
+      .default,
+    description: (
+      <>
+        Il nostro server, offre un ottimo servizio di supporto clienti, entra
+        nel discord per ricevere supporto! <a>discord.io/pryma</a>
       </>
     ),
   },

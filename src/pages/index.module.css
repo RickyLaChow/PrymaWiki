@@ -4,7 +4,7 @@
  */
 
 .heroBanner {
-  background-color: green;
+  background-color: #91beff;
   padding: 4rem 0;
   text-align: center;
   position: relative;
@@ -15,6 +15,10 @@
   .heroBanner {
     padding: 2rem;
   }
+}
+
+.titolo {
+  font-size: large;
 }
 
 .buttons {
