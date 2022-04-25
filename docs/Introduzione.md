@@ -2,6 +2,7 @@
 sidebar_position: 1
 ---
 
+
 export const Highlight = ({children, color}) => (
   <span
     style={{

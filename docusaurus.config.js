@@ -22,13 +22,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl: "https://github.com/facebook/docusaurus/edit/main/website/"
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/edit/main/website/blog/"
+          editUrl: "https://github.com/RickyLaChow/Pryma/edit/main/website/"
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css")
@@ -88,8 +82,8 @@ module.exports = {
             title: "More",
             items: [
               {
-                label: "News",
-                to: "/blog"
+                label: "Documentazione",
+                to: "/docs"
               },
               {
                 label: "GitHub",
