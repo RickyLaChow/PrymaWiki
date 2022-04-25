@@ -49,7 +49,7 @@ module.exports = {
         items: [
           {
             type: "doc",
-            docId: "intro",
+            docId: "Introduzione",
             position: "left",
             label: "Documentazione ✨"
           }
@@ -63,7 +63,7 @@ module.exports = {
             items: [
               {
                 label: "Tutorial",
-                to: "/docs/intro"
+                to: "/docs/Introduzione"
               }
             ]
           },
