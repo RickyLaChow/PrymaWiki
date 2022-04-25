@@ -22,19 +22,19 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl: "https://github.com/facebook/docusaurus/edit/main/website/",
+          editUrl: "https://github.com/facebook/docusaurus/edit/main/website/"
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            "https://github.com/facebook/docusaurus/edit/main/website/blog/",
+            "https://github.com/facebook/docusaurus/edit/main/website/blog/"
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
-        },
-      }),
-    ],
+          customCss: require.resolve("./src/css/custom.css")
+        }
+      })
+    ]
   ],
 
   themeConfig:
@@ -44,22 +44,16 @@ module.exports = {
         title: "PrymaCommunity",
         logo: {
           alt: "My Site Logo",
-          src: "img/logo.png",
+          src: "img/logo.png"
         },
         items: [
           {
             type: "doc",
             docId: "intro",
             position: "left",
-            label: "Wiki",
-          },
-          { to: "/blog", label: "News", position: "left" },
-          {
-            href: "https://github.com/facebook/docusaurus",
-            label: "GitHub",
-            position: "right",
-          },
-        ],
+            label: "Documentazione ✨"
+          }
+        ]
       },
       footer: {
         style: "dark",
@@ -69,46 +63,46 @@ module.exports = {
             items: [
               {
                 label: "Tutorial",
-                to: "/docs/intro",
-              },
-            ],
+                to: "/docs/intro"
+              }
+            ]
           },
           {
             title: "Community",
             items: [
               {
                 label: "Tiktok",
-                href: "https://www.tiktok.com/@prymacommunity",
+                href: "https://www.tiktok.com/@prymacommunity"
               },
               {
                 label: "Discord",
-                href: "https://www.discord.io/pryma",
+                href: "https://www.discord.io/pryma"
               },
               {
                 label: "Instagram",
-                href: "https://www.instagram.com/mcpryma/",
-              },
-            ],
+                href: "https://www.instagram.com/mcpryma/"
+              }
+            ]
           },
           {
             title: "More",
             items: [
               {
                 label: "News",
-                to: "/blog",
+                to: "/blog"
               },
               {
                 label: "GitHub",
-                href: "https://github.com/RickyLaChow",
-              },
-            ],
-          },
+                href: "https://github.com/RickyLaChow"
+              }
+            ]
+          }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Prymacommunity.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Prymacommunity.`
       },
       prism: {
         theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-      },
-    }),
+        darkTheme: darkCodeTheme
+      }
+    })
 };

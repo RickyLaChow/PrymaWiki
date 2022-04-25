@@ -4,11 +4,16 @@
  */
 
 .heroBanner {
-  background-color: #91beff;
-  padding: 4rem 0;
+  background-color: #FF7C00;
+  padding: 14rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+}
+
+.sotto {
+  font-size: large;
+  color: blue;
 }
 
 @media screen and (max-width: 966px) {
