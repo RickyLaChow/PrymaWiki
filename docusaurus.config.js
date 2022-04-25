@@ -1,28 +1,37 @@
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+// @ts-check
+// Note: type annotations allow type checking and IDEs autocompletion
 
-// With JSDoc @type annotations, IDEs can provide config autocompletion
-/** @type {import('@docusaurus/types').DocusaurusConfig} */
-module.exports = {
-  title: "Pryma Community",
-  tagline: "Server Minecraft",
-  url: "https://www.prymacommunity.it",
+const lightCodeTheme = require('prism-react-renderer/themes/github');
+const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+
+/** @type {import('@docusaurus/types').Config} */
+const config = {
+  title: "Pryma",
+  tagline: "Dinosaurs are cool",
+  url: "img/logo.png",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
-  organizationName: "Rickylachow", // Usually your GitHub org/user name.
-  projectName: "Pryma", // Usually your repo name.
+  favicon: "img/logo.ico",
+  organizationName: "facebook", // Usually your GitHub org/user name.
+  projectName: "docusaurus", // Usually your repo name.
 
   presets: [
     [
-      "@docusaurus/preset-classic",
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl: "https://github.com/RickyLaChow/Pryma/edit/main/website/"
+          editUrl:
+            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
+        },
+        blog: {
+          showReadingTime: true,
+          // Please change this to your repo.
+          editUrl:
+            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css")
@@ -35,9 +44,9 @@ module.exports = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "PrymaCommunity",
+        title: "Pryma",
         logo: {
-          alt: "My Site Logo",
+          alt: "Logo",
           src: "img/logo.png"
         },
         items: [
@@ -45,7 +54,13 @@ module.exports = {
             type: "doc",
             docId: "Introduzione",
             position: "left",
-            label: "Documentazione ✨"
+            label: "Tutorial"
+          },
+          { to: "/blog", label: "Blog", position: "left" },
+          {
+            href: "https://github.com/facebook/docusaurus",
+            label: "GitHub",
+            position: "right"
           }
         ]
       },
@@ -65,16 +80,16 @@ module.exports = {
             title: "Community",
             items: [
               {
-                label: "Tiktok",
-                href: "https://www.tiktok.com/@prymacommunity"
+                label: "Stack Overflow",
+                href: "https://stackoverflow.com/questions/tagged/docusaurus"
               },
               {
                 label: "Discord",
-                href: "https://www.discord.io/pryma"
+                href: "https://discordapp.com/invite/docusaurus"
               },
               {
-                label: "Instagram",
-                href: "https://www.instagram.com/mcpryma/"
+                label: "Twitter",
+                href: "https://twitter.com/docusaurus"
               }
             ]
           },
@@ -82,17 +97,17 @@ module.exports = {
             title: "More",
             items: [
               {
-                label: "Documentazione",
-                to: "/docs"
+                label: "Blog",
+                to: "/blog"
               },
               {
                 label: "GitHub",
-                href: "https://github.com/RickyLaChow"
+                href: "https://github.com/facebook/docusaurus"
               }
             ]
           }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Prymacommunity.`
+        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`
       },
       prism: {
         theme: lightCodeTheme,
@@ -100,3 +115,5 @@ module.exports = {
       }
     })
 };
+
+module.exports = config;
