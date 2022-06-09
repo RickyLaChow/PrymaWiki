@@ -8,10 +8,10 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "Pryma",
   tagline: "Dinosaurs are cool",
-  url: "img/logo.png",
+  url: "https://prymacommunity.it",
   baseUrl: "/",
-  onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
+  onBrokenLinks: "log",
+  onBrokenMarkdownLinks: "log",
   favicon: "img/logo.ico",
   organizationName: "facebook", // Usually your GitHub org/user name.
   projectName: "docusaurus", // Usually your repo name.
