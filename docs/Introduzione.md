@@ -1,18 +1,18 @@
 ---
 sidebar_position: 1
+slug: /
 ---
 
-
 export const Highlight = ({children, color}) => (
-  <span
-    style={{
+<span
+style={{
       backgroundColor: color,
       borderRadius: '2px',
       color: '#fff',
       padding: '0.2rem',
     }}>
-    {children}
-  </span>
+{children}
+</span>
 );
 
 ## Primi passi 🦊
@@ -27,6 +27,6 @@ entrare nel server! 😉
 3. Inserisci l'indirizzo IP: <Highlight color="orange">mc.prymacommunity.it</Highlight>;
 4. Registrati con il comando /register password password;
 5. Seleziona la modalità e divertiti! <br/>
-(Consigliamo di utilizzare la optifine: https://optifine.net/downloads)
-## 
+   (Consigliamo di utilizzare la optifine: https://optifine.net/downloads)
 
+##
